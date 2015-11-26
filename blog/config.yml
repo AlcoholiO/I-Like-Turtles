@@ -1,0 +1,30 @@
+site:
+    title: I Like Turtles
+    subtitle: Turtle MC
+    # logo: -/images/avatar.jpg
+    limit: 10
+    theme: theme
+    disqus: somebody
+    lang: en
+    url: http://www.inkpaper.io/blog/
+    # root: /blog
+
+authors:
+    me:
+        name: Johnny Reimar
+        intro: The smurfs love me
+        avatar: -/images/avatar.jpg
+
+build:
+    port: 8000
+    # Copied files to public folder when build
+    copy:
+        - theme/bundle
+        - theme/favicon.ico
+        - theme/robots.txt
+        - source/images
+    # Excuted command when use 'ink publish'
+    publish: |
+        git add . -A
+        git commit -m "update"
+        git push origin

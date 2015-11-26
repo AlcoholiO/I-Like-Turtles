@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    RedCloth (4.2.9)
+    ink (0.1.3)
+      RedCloth
+      rdiscount
+      rdoc
+    rdiscount (2.1.8)
+    rdoc (4.2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ink
+
+BUNDLED WITH
+   1.10.6
